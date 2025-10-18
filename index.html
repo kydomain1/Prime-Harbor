@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeHarbor - Your Lifestyle & Inspiration Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Prime<span class="logo-highlight">Harbor</span></span>
+                    </a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to PrimeHarbor</h1>
+                <p class="hero-subtitle">Discover inspiration for your lifestyle, from fashion to finance, all in one place.</p>
+                <a href="#articles" class="btn btn-primary">Explore Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Explore by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="fashion">
+                    <div class="category-icon">👗</div>
+                    <h3>Fashion & Accessories</h3>
+                    <p>Style tips and trends</p>
+                </div>
+                <div class="category-card" data-category="health">
+                    <div class="category-icon">💄</div>
+                    <h3>Health & Beauty</h3>
+                    <p>Wellness and skincare</p>
+                </div>
+                <div class="category-card" data-category="home">
+                    <div class="category-icon">🏡</div>
+                    <h3>Home & Garden</h3>
+                    <p>Living space inspiration</p>
+                </div>
+                <div class="category-card" data-category="travel">
+                    <div class="category-icon">✈️</div>
+                    <h3>Travel & Accommodation</h3>
+                    <p>Adventure and stays</p>
+                </div>
+                <div class="category-card" data-category="finance">
+                    <div class="category-icon">💰</div>
+                    <h3>Finance & Insurance</h3>
+                    <p>Money management tips</p>
+                </div>
+                <div class="category-card" data-category="food">
+                    <div class="category-icon">🍽️</div>
+                    <h3>Food & Beverage</h3>
+                    <p>Culinary delights</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles" id="articles">
+        <div class="container">
+            <div class="articles-header">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="filter-controls">
+                    <select id="categoryFilter" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="fashion">Fashion & Accessories</option>
+                        <option value="health">Health & Beauty</option>
+                        <option value="home">Home & Garden</option>
+                        <option value="travel">Travel & Accommodation</option>
+                        <option value="finance">Finance & Insurance</option>
+                        <option value="food">Food & Beverage</option>
+                    </select>
+                </div>
+            </div>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Articles will be dynamically loaded -->
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <span class="logo-icon">🌸</span>
+                        PrimeHarbor
+                    </h3>
+                    <p>Your trusted source for lifestyle inspiration and practical advice.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-filter="fashion">Fashion & Accessories</a></li>
+                        <li><a href="#" data-filter="health">Health & Beauty</a></li>
+                        <li><a href="#" data-filter="home">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PrimeHarbor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/articles-data.js"></script>
+    <script src="js/image-fallback.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

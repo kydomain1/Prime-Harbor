@@ -1,0 +1,12 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="productGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8D5C4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5E6E8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#productGrad)"/>
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="60" fill="#FFFFFF" text-anchor="middle" opacity="0.9">🛍️</text>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-size="24" font-weight="600" fill="#FFFFFF" text-anchor="middle">Product</text>
+</svg>
+

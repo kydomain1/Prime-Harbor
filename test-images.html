@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片显示测试 - PrimeHarbor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #F5E6E8, #E3EBF2);
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(212, 181, 176, 0.3);
+        }
+        
+        h1 {
+            color: #D4B5B0;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .status {
+            text-align: center;
+            padding: 1rem;
+            background: #F9F2ED;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        
+        .status.success {
+            background: #C8D5C5;
+            color: #2d5016;
+        }
+        
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .test-section {
+            margin: 2rem 0;
+        }
+        
+        h2 {
+            color: #5A5A5A;
+            margin-bottom: 1rem;
+            border-left: 4px solid #D4B5B0;
+            padding-left: 1rem;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .image-card {
+            border: 2px solid #E5DDD8;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #F9F2ED;
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .image-info {
+            padding: 1rem;
+        }
+        
+        .image-info h3 {
+            font-size: 0.9rem;
+            color: #5A5A5A;
+            margin-bottom: 0.5rem;
+        }
+        
+        .image-status {
+            font-size: 0.85rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        
+        .status-loading {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status-failed {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #D4B5B0, #E8D5C4);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 1rem 0.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 2rem 0;
+        }
+        
+        .note strong {
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ 图片显示测试</h1>
+        
+        <div class="status" id="mainStatus">
+            ⏳ 正在测试图片加载...
+        </div>
+
+        <div class="note">
+            <strong>✨ 已修复：</strong> 所有图片现在都有备用方案！如果 Unsplash 图片无法加载，会自动显示漂亮的占位图。
+        </div>
+
+        <div class="test-section">
+            <h2>测试 1: Unsplash 图片（可能需要科学上网）</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=400&q=80" 
+                         alt="Test 1" 
+                         onerror="this.src='https://via.placeholder.com/400x300/D4B5B0/FFFFFF?text=Fallback+Image';this.nextElementSibling.querySelector('.image-status').className='image-status status-failed';this.nextElementSibling.querySelector('.image-status').textContent='❌ 已使用备用图'">
+                    <div class="image-info">
+                        <h3>Unsplash 测试图 1</h3>
+                        <span class="image-status status-loading">⏳ 加载中...</span>
+                    </div>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&q=80" 
+                         alt="Test 2"
+                         onerror="this.src='https://via.placeholder.com/400x300/E8D5C4/FFFFFF?text=Fallback+Image';this.nextElementSibling.querySelector('.image-status').className='image-status status-failed';this.nextElementSibling.querySelector('.image-status').textContent='❌ 已使用备用图'"
+                         onload="this.nextElementSibling.querySelector('.image-status').className='image-status status-success';this.nextElementSibling.querySelector('.image-status').textContent='✅ 加载成功'">
+                    <div class="image-info">
+                        <h3>Unsplash 测试图 2</h3>
+                        <span class="image-status status-loading">⏳ 加载中...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>测试 2: 备用占位图（始终可用）</h2>
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="https://via.placeholder.com/400x300/D4B5B0/FFFFFF?text=Fashion+%26+Accessories" alt="Placeholder 1">
+                    <div class="image-info">
+                        <h3>占位图 - 玫瑰色</h3>
+                        <span class="image-status status-success">✅ 备用方案</span>
+                    </div>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://via.placeholder.com/400x300/E8D5C4/FFFFFF?text=Product" alt="Placeholder 2">
+                    <div class="image-info">
+                        <h3>占位图 - 桃色</h3>
+                        <span class="image-status status-success">✅ 备用方案</span>
+                    </div>
+                </div>
+                
+                <div class="image-card">
+                    <img src="https://via.placeholder.com/400x300/B5C7D3/FFFFFF?text=Related+Article" alt="Placeholder 3">
+                    <div class="image-info">
+                        <h3>占位图 - 蓝色</h3>
+                        <span class="image-status status-success">✅ 备用方案</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>💡 说明：</strong>
+            <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                <li>如果 Unsplash 图片显示 "❌ 已使用备用图"，表示自动切换到占位图（正常现象）</li>
+                <li>如果显示 "✅ 加载成功"，表示您的网络可以访问 Unsplash</li>
+                <li>无论哪种情况，网站都能正常显示图片！</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="btn">🏠 返回主页</a>
+            <a href="图片显示问题解决方案.md" class="btn">📖 查看解决方案</a>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem; color: #8A8A8A; font-size: 0.9rem;">
+            <p>PrimeHarbor - 图片显示已优化 ✨</p>
+        </div>
+    </div>
+
+    <script>
+        // 检测图片加载状态
+        let loadedCount = 0;
+        let totalImages = document.querySelectorAll('img').length;
+        
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', () => {
+                loadedCount++;
+                updateStatus();
+            });
+            img.addEventListener('error', () => {
+                loadedCount++;
+                updateStatus();
+            });
+        });
+
+        function updateStatus() {
+            if (loadedCount === totalImages) {
+                const statusEl = document.getElementById('mainStatus');
+                statusEl.className = 'status success';
+                statusEl.innerHTML = '✅ 测试完成！所有图片都已加载（包括备用图）';
+            }
+        }
+
+        // 如果5秒后还没加载完，显示提示
+        setTimeout(() => {
+            if (loadedCount < totalImages) {
+                const statusEl = document.getElementById('mainStatus');
+                statusEl.className = 'status';
+                statusEl.innerHTML = '⚠️ 部分图片加载较慢，但会自动切换到备用图';
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
+

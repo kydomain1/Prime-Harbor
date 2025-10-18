@@ -1,0 +1,122 @@
+====================================
+  图片下载使用说明
+====================================
+
+✅ 已为您准备：
+
+1. 图片下载清单.txt
+   - 包含 20 张精心匹配的 Unsplash 高质量图片
+   - 每张图片都与文章内容深度匹配
+   - 格式：文件名|图片URL
+
+2. 下载图片.ps1 (PowerShell 脚本)
+   - 适用于 Windows 用户
+   - 推荐使用 ⭐⭐⭐
+
+3. 下载图片.py (Python 脚本)
+   - 适用于所有平台
+   - 需要 Python 3.x
+
+====================================
+🚀 快速开始（3步完成）：
+====================================
+
+方法一：使用 PowerShell (推荐)
+-------------------------------
+1. 右键点击"下载图片.ps1"
+2. 选择"使用 PowerShell 运行"
+3. 等待下载完成
+
+或者在 PowerShell 中输入：
+cd D:\PrimeHarbor
+.\下载图片.ps1
+
+
+方法二：使用 Python
+-------------------------------
+1. 确保已安装 Python 3.x
+2. 在命令行中输入：
+   cd D:\PrimeHarbor
+   python 下载图片.py
+3. 等待下载完成
+
+
+方法三：手动下载（如果脚本不工作）
+-------------------------------
+1. 打开"图片下载清单.txt"
+2. 复制每个图片的 URL
+3. 在浏览器中打开 URL
+4. 右键保存图片，使用清单中的文件名
+5. 保存到 images\articles\ 文件夹
+
+====================================
+📋 下载清单（20张图片）：
+====================================
+
+✓ 时尚类 (4张)
+  - fashion-summer-dresses.jpg (红色连衣裙)
+  - fashion-white-sundress.jpg (白色太阳裙)
+  - fashion-floral-midi.jpg (花卉中长裙)
+  - fashion-styling-tips.jpg (穿搭展示)
+
+✓ 健康美容 (4张)
+  - health-skincare-products.jpg (护肤品组合)
+  - health-morning-routine.jpg (早晨护肤)
+  - health-natural-products.jpg (天然产品)
+  - health-night-routine.jpg (夜间护肤)
+
+✓ 家居园艺 (4张)
+  - home-reading-nook.jpg (温馨阅读角)
+  - home-window-seat.jpg (窗边座位)
+  - home-cozy-armchair.jpg (舒适扶手椅)
+  - home-nook-accessories.jpg (阅读配饰)
+
+✓ 旅行住宿 (4张)
+  - travel-europe-destination.jpg (欧洲旅行)
+  - travel-lake-bled.jpg (布莱德湖)
+  - travel-porto.jpg (波尔图)
+  - travel-kotor.jpg (科托尔)
+
+✓ 金融保险 (4张)
+  - finance-budgeting.jpg (预算规划)
+  - finance-budget-planning.jpg (预算计划)
+  - finance-savings.jpg (储蓄)
+  - finance-investment.jpg (投资)
+
+====================================
+⚠️ 常见问题：
+====================================
+
+Q: PowerShell 提示"无法加载，因为在此系统上禁止运行脚本"？
+A: 以管理员身份运行 PowerShell，输入：
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+   然后按 Y 确认，再运行脚本。
+
+Q: 下载速度慢怎么办？
+A: Unsplash 服务器在国外，下载可能较慢。
+   脚本已添加进度显示，请耐心等待。
+
+Q: 某些图片下载失败？
+A: 可以重新运行脚本，已下载的图片会自动跳过。
+   或手动下载失败的图片。
+
+Q: 图片质量如何？
+A: 所有图片都是 1200px 宽的高质量版本，
+   适合网页显示，文件大小约 100-300KB。
+
+====================================
+✨ 完成后：
+====================================
+
+1. 检查 images\articles\ 文件夹
+   应该有 20 张图片
+
+2. 打开 index.html 刷新网站
+   查看真实图片效果
+
+3. 如有图片缺失，会自动显示占位图
+
+====================================
+
+祝您使用愉快！🎉
+

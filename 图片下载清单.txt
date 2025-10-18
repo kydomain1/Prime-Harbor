@@ -1,0 +1,50 @@
+# PrimeHarbor 文章图片下载清单
+# 格式：文件名|图片URL
+# 
+# 使用方法：用脚本读取此文件，下载所有图片到 images/articles/ 文件夹
+
+# ========================================
+# 时尚 & 配饰 (Fashion)
+# ========================================
+
+fashion-summer-dresses.jpg|https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=1200&q=80
+fashion-white-sundress.jpg|https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=1200&q=80
+fashion-floral-midi.jpg|https://images.unsplash.com/photo-1612423284934-2850a4ea6b0f?w=1200&q=80
+fashion-styling-tips.jpg|https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=1200&q=80
+
+# ========================================
+# 健康 & 美容 (Health & Beauty)
+# ========================================
+
+health-skincare-products.jpg|https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=1200&q=80
+health-morning-routine.jpg|https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&q=80
+health-natural-products.jpg|https://images.unsplash.com/photo-1570554886111-e80fcca6a029?w=1200&q=80
+health-night-routine.jpg|https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1200&q=80
+
+# ========================================
+# 家居 & 园艺 (Home & Garden)
+# ========================================
+
+home-reading-nook.jpg|https://images.unsplash.com/photo-1555652737-42d3f3b7e67d?w=1200&q=80
+home-window-seat.jpg|https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1200&q=80
+home-cozy-armchair.jpg|https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200&q=80
+home-nook-accessories.jpg|https://images.unsplash.com/photo-1522444195799-478538b28823?w=1200&q=80
+
+# ========================================
+# 旅行 & 住宿 (Travel)
+# ========================================
+
+travel-europe-destination.jpg|https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=1200&q=80
+travel-lake-bled.jpg|https://images.unsplash.com/photo-1505832018823-50331d70d237?w=1200&q=80
+travel-porto.jpg|https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1200&q=80
+travel-kotor.jpg|https://images.unsplash.com/photo-1565022079403-c6af7c4b33c1?w=1200&q=80
+
+# ========================================
+# 金融 & 保险 (Finance)
+# ========================================
+
+finance-budgeting.jpg|https://images.unsplash.com/photo-1554224311-beee2ece8be7?w=1200&q=80
+finance-budget-planning.jpg|https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1200&q=80
+finance-savings.jpg|https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=1200&q=80
+finance-investment.jpg|https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=1200&q=80
+

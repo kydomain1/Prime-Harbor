@@ -1,0 +1,13 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="foodGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E5DDD8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F9F2ED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#foodGrad)"/>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="80" fill="#5A5A5A" text-anchor="middle" opacity="0.9">🍽️</text>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#5A5A5A" text-anchor="middle">Food &amp; Beverage</text>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="18" fill="#8A8A8A" text-anchor="middle" opacity="0.8">Culinary Delights</text>
+</svg>
+

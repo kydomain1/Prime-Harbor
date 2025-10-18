@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PrimeHarbor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Prime<span class="logo-highlight">Harbor</span></span>
+                    </a>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="index.html#categories" class="nav-link">Categories</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">We'd love to hear from you! Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" name="category">
+                                <option value="">Select a category</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="support">Technical Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Have a question or want to collaborate? We're here to help!</p>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Email Us</h3>
+                                <p>hello@primeharbor.com</p>
+                                <p class="info-note">We'll respond within 24 hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Response Time</h3>
+                                <p>Monday - Friday</p>
+                                <p class="info-note">9:00 AM - 6:00 PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Social Media</h3>
+                                <p>Connect with us on social platforms</p>
+                                <div class="social-links-contact">
+                                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-section">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="faq-item">
+                            <h4>Can I contribute to PrimeHarbor?</h4>
+                            <p>Yes! We're always looking for passionate writers. Contact us with your ideas and writing samples.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>Do you accept sponsored content?</h4>
+                            <p>We consider partnerships that align with our values. Please reach out with your proposal.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>How can I report an issue?</h4>
+                            <p>Select "Technical Support" in the category dropdown and describe the issue in detail.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-cta">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter and never miss out on the latest lifestyle tips and inspiration!</p>
+                <form class="newsletter-form-inline" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">
+                        <span class="logo-icon">🌸</span>
+                        PrimeHarbor
+                    </h3>
+                    <p>Your trusted source for lifestyle inspiration and practical advice.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#articles">Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#articles">Fashion & Accessories</a></li>
+                        <li><a href="index.html#articles">Health & Beauty</a></li>
+                        <li><a href="index.html#articles">Home & Garden</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get the latest updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PrimeHarbor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/pages.js"></script>
+</body>
+</html>
+
