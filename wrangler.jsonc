@@ -2,9 +2,7 @@
     "name": "prime-harbor",
     "compatibility_date": "2025-11-27",
     "assets": {
-        "directory": "./",
-        "binding": "ASSETS"
-    },
-    "upload_source_maps": false
+        "directory": "./"
+    }
 }
 
