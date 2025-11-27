@@ -79,6 +79,36 @@ a {
     transition: var(--transition-normal);
 }
 
+a.stubhub-highlight {
+    background: #fff4cc;
+    color: #0a3d62;
+    font-weight: 600;
+    padding: 0 0.25em;
+    border-radius: 0.3em;
+    text-decoration: underline;
+    box-shadow: 0 0 0 2px rgba(255, 244, 204, 0.4);
+}
+
+a.stubhub-highlight:hover {
+    color: #09324f;
+    box-shadow: 0 0 0 2px rgba(9, 50, 79, 0.15);
+}
+
+a.viagogo-highlight {
+    background: #e3f2fd;
+    color: #0d47a1;
+    font-weight: 600;
+    padding: 0 0.25em;
+    border-radius: 0.3em;
+    text-decoration: underline;
+    box-shadow: 0 0 0 2px rgba(227, 242, 253, 0.5);
+}
+
+a.viagogo-highlight:hover {
+    color: #08306b;
+    box-shadow: 0 0 0 2px rgba(8, 48, 107, 0.2);
+}
+
 /* ===== Buttons ===== */
 .btn {
     display: inline-block;

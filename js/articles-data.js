@@ -1,4 +1,9 @@
 // Articles Data
+const stubhubAffiliateUrl = "https://www.linkhaitao.com/index.php?mod=lhdeal&track=9d222IJPOQtkwmkv2zqDMy5BUBCk3EHuKg8iz6iW4xGSjzeT57PglltstWvLXXDrQLqQeD0y&new=https%3A%2F%2Fwww.stubhub.com%2F";
+const stubhubHighlightLink = `<a href="${stubhubAffiliateUrl}" class="stubhub-highlight" target="_blank" rel="noopener">StubHub</a>`;
+const viagogoAffiliateUrl = "https://www.linkhaitao.com/index.php?mod=lhdeal&track=b202vzzyin1L3EsfJsGwWgHgyYpkZgMo637IySzRWugKsHoSL_bAa3V00sXDkxYcOYMRc&new=https%3A%2F%2Fwww.viagogo.com%2F";
+const viagogoHighlightLink = `<a href="${viagogoAffiliateUrl}" class="viagogo-highlight" target="_blank" rel="noopener">viagogo</a>`;
+
 const articlesData = [
     {
         id: 1,
@@ -316,6 +321,128 @@ const articlesData = [
                 image: "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=800&q=80",
                 rating: 4.6,
                 link: "#"
+            }
+        ]
+    }
+    ,
+    {
+        id: 6,
+        title: "StubHub: Your Gateway to Live Sports, Music & Theater",
+        category: "travel",
+        categoryName: "Travel & Accommodation",
+        date: "October 4, 2025",
+        excerpt: "Plan a fall season of unforgettable stadium showdowns, arena concerts, and Broadway debuts by pairing travel savvy with trusted ticket intel.",
+        image: "images/1.png",
+        author: "Lena Ortiz",
+        content: `
+            <p>${stubhubHighlightLink} makes it effortless to turn a free weekend into a front-row memory, and ${stubhubHighlightLink} keeps delivering verified seats whether you're chasing playoffs, festivals, or premieres. Frequent travelers lean on ${stubhubHighlightLink} to sync their calendars with bucket-list lineups, while new fans trust ${stubhubHighlightLink} for transparent pricing before they even pack a bag.</p>
+            
+            <p>Once you shortlist a city, ${stubhubHighlightLink} lets you compare sections in seconds, and ${stubhubHighlightLink} maps fees clearly so you can reserve hotels with confidence. The same ${stubhubHighlightLink} dashboard tracks mobile transfers, and dedicated alerts from ${stubhubHighlightLink} ping your phone the moment more seats drop.</p>
+            
+            <h3>Live Sports Weekenders</h3>
+            <p>Whether it's London NFL games or Madrid soccer derbies, ${stubhubHighlightLink} outlines stadium maps that highlight family zones, while ${stubhubHighlightLink} bundles parking passes to save day-of stress. Dedicated customer care inside ${stubhubHighlightLink} helps you compare resale timelines, and ${stubhubHighlightLink} flags upsells like hospitality lounges. Even when rosters change, ${stubhubHighlightLink} issues instant notifications so you never miss a kickoff pivot.</p>
+            
+            <h3>Concert Tours Without Guesswork</h3>
+            <p>Tour stops sell out fast, so ${stubhubHighlightLink} layers artist-specific filters that help you target VIP pits or relaxed bowl seats. The mobile wallet from ${stubhubHighlightLink} keeps QR codes synced even if you're offline, and insider notes on ${stubhubHighlightLink} reveal when artists add extra nights. Planning group travel? ${stubhubHighlightLink} lets you share holds before you pay, meaning everyone confirms the same vibe.</p>
+            <img src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?w=1200&q=80" alt="Crowd at an arena concert" class="article-detail-image">
+            
+            <h3>Theater & Cultural Premieres</h3>
+            <p>Broadway debuts and West End revivals move quickly, but ${stubhubHighlightLink} highlights obstructed-view callouts so you know exactly what you're buying. For gala nights, ${stubhubHighlightLink} even bundles dress-circle upgrades, and traveling patrons appreciate how ${stubhubHighlightLink} syncs with digital wallets for smooth entry. When producers release rush inventory, ${stubhubHighlightLink} pushes alerts faster than email lists.</p>
+            
+            <h3>Plan, Book, Repeat</h3>
+            <p>Loyal users lean on ${stubhubHighlightLink} to stack experiences city by city, and ${stubhubHighlightLink} plugs into travel budgets via clear taxes and fees. The itinerary view inside ${stubhubHighlightLink} timestamps gate openings, while ${stubhubHighlightLink} stores every receipt for expense reporting.</p>
+            <ul>
+                <li>${stubhubHighlightLink} calendar reminders keep pre-show dinners and merch drops on schedule.</li>
+                <li>${stubhubHighlightLink} FanProtect guarantees backstop last-minute cancellations.</li>
+                <li>${stubhubHighlightLink} resale tools help you upgrade if better seats unlock on game day.</li>
+            </ul>
+            
+            <h3>Day-of Confidence</h3>
+            <p>Use venue maps inside ${stubhubHighlightLink} to find express entrances, and share passes through ${stubhubHighlightLink} so your group splits up without stress. If travel delays pop up, ${stubhubHighlightLink} support can reissue mobile tickets instantly, and push notifications from ${stubhubHighlightLink} confirm gate scans in real time.</p>
+            
+            <p>When the final encore fades, ${stubhubHighlightLink} archives your seat history, making it simple to recreate the magic in another city. Build your own highlight reel this October and let ${stubhubHighlightLink} guide every sports, music, and theater milestone.</p>
+        `,
+        products: [
+            {
+                name: "Game Day Hospitality Upgrade",
+                description: `Pair premium stadium seating with lounge access booked through ${stubhubHighlightLink} for smoother security, chef-led menus, and exclusive merch pickup windows.`,
+                price: "From $249",
+                image: "https://images.unsplash.com/photo-1519750783826-e2420f4d687f?w=800&q=80",
+                rating: 4.9,
+                link: stubhubAffiliateUrl
+            },
+            {
+                name: "Arena Tour Tracker Pack",
+                description: `Lock in multiple tour stops via ${stubhubHighlightLink} and sync alerts for setlist changes, VIP check-in times, and merch pre-orders across cities.`,
+                price: "From $189",
+                image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800&q=80",
+                rating: 4.8,
+                link: stubhubAffiliateUrl
+            },
+            {
+                name: "Broadway Weekend Duo Seats",
+                description: `Reserve orchestra or mezzanine pairs inside ${stubhubHighlightLink} with flexible transfers, ensuring every curtain rise fits your Manhattan itinerary.`,
+                price: "From $320",
+                image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80",
+                rating: 4.7,
+                link: stubhubAffiliateUrl
+            }
+        ]
+    },
+    {
+        id: 7,
+        title: "Viagogo: Access ATP World Tour Finals & Euroleague Tickets",
+        category: "travel",
+        categoryName: "Travel & Accommodation",
+        date: "October 6, 2025",
+        excerpt: "Lock in elite tennis and basketball seats for October getaways with a unified ticketing strategy that keeps every itinerary stress-free.",
+        image: "images/2.png",
+        author: "Marcus Bell",
+        content: `
+            <p>${viagogoHighlightLink} streamlines the chase for season-defining matches, ${viagogoHighlightLink} verifies every listing through its FanProtect promise, and ${viagogoHighlightLink} keeps travelers confident when they bounce from one European capital to the next.</p>
+            
+            <p>By tagging alerts inside ${viagogoHighlightLink}, you learn when players qualify, while ${viagogoHighlightLink} maps pricing trends by section so you can book hotels intelligently, and ${viagogoHighlightLink} archives all receipts for quick expense reporting.</p>
+            
+            <h3>ATP World Tour Finals Game Plan</h3>
+            <p>At London's O2, ${viagogoHighlightLink} displays clear seat views, ${viagogoHighlightLink} highlights hospitality inclusions, ${viagogoHighlightLink} keeps doubles and singles sessions sortable, and ${viagogoHighlightLink} lets you lock in multi-day passes before semifinals spike demand.</p>
+            <p>Need hospitality add-ons? ${viagogoHighlightLink} lists lounge perks line by line, ${viagogoHighlightLink} bundles parking or tube-friendly QR codes, and ${viagogoHighlightLink} syncs to Apple Wallet for frictionless entry.</p>
+            
+            <ul>
+                <li>${viagogoHighlightLink} session reminders ensure you never miss a late-night tiebreak.</li>
+                <li>${viagogoHighlightLink} resale filters show transfers from trusted hosts only.</li>
+                <li>${viagogoHighlightLink} mobile push alerts flag price dips in real time.</li>
+            </ul>
+            
+            <h3>Euroleague City Hops</h3>
+            <p>Barcelona, Belgrade, and Istanbul atmospheres all feel different, so ${viagogoHighlightLink} filters by club sections, ${viagogoHighlightLink} exposes obstructed rows before checkout, ${viagogoHighlightLink} aggregates away supporter policies, and ${viagogoHighlightLink} keeps exchange rates transparent.</p>
+            <p>Dynamic calendars inside ${viagogoHighlightLink} let you hover from regular season into playoffs, ${viagogoHighlightLink} keeps seat holds sharable with your group chat, and ${viagogoHighlightLink} emails PDF backups for peace of mind.</p>
+            
+            <ul>
+                <li>${viagogoHighlightLink} arena filters recommend family-friendly blocks.</li>
+                <li>${viagogoHighlightLink} currency tools show fees in your home denomination.</li>
+                <li>${viagogoHighlightLink} transfer tracking confirms when every ticket hits your inbox.</li>
+            </ul>
+            
+            <h3>Plan & Protect Everywhere</h3>
+            <p>Use the watchlist inside ${viagogoHighlightLink} to monitor both leagues simultaneously, lean on ${viagogoHighlightLink} to resend credentials if airlines delay you, and tap ${viagogoHighlightLink} chat support when you need last-minute seat upgrades.</p>
+            <p>When the weekend ends, ${viagogoHighlightLink} stores your digital stubs for memory keeping, ${viagogoHighlightLink} suggests comparable events in your next destination, and ${viagogoHighlightLink} keeps pushing curated picks so your October stays booked solid.</p>
+        `,
+        products: [
+            {
+                name: "O2 Finals Hospitality Pair",
+                description: `Reserve club-level seats plus lounge dining directly through ${viagogoHighlightLink} to enjoy chef menus, private entrances, and concierge seating support.`,
+                price: "From $540",
+                image: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800&q=80",
+                rating: 4.9,
+                link: viagogoAffiliateUrl
+            },
+            {
+                name: "Continental Courtside Tracker",
+                description: `Sync alerts in ${viagogoHighlightLink} for both tennis and basketball, ensuring you catch flash releases, verified transfers, and premium travel add-ons in one dashboard.`,
+                price: "From $149",
+                image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&q=80",
+                rating: 4.7,
+                link: viagogoAffiliateUrl
             }
         ]
     }
